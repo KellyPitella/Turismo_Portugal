@@ -117,7 +117,7 @@ cd Portal-Turismo-Portugal
 </h2> 
 
 <p>
-    🔗 <a href="https://www.linkedin.com/in/SEU-LINKEDIN](https://www.linkedin.com/in/kellypitella/)"><b>LinkedIn</b></a> 
+    🔗 <a href="https://www.linkedin.com/in/kellypitella"><b>LinkedIn</b></a> 
     <br>
     📧 kellypitella@gmail.com
 </p>
