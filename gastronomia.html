@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra a rica gastronomia portuguesa: os melhores peixes, carnes tradicionais, e produtos icônicos como Vinho do Porto e Pastéis de Nata.">
+    <title>Gastronomia Portuguesa - Portal Turismo Portugal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+  
+        :root {
+            --cor-primaria: #1c4e6d;
+            --cor-secundaria: #003b4f;
+            --cor-fundo: #f3f3eb;
+            --cor-highlight: #cce6f0;
+            --cor-sombra: rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', 'Arial', Helvetica, sans-serif;
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+            color: var(--cor-secundaria);
+            padding: 0 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        header img:first-child {
+            border-radius: 0; 
+            margin-bottom: -4px;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        ul.menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        ul.menu li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 20px;
+            transition: background 0.3s, color 0.3s;
+            font-weight: 500;
+        }
+
+        ul.menu li a:hover,
+        ul.menu li a:focus { 
+            color: var(--cor-highlight);
+            background-color: #0d3850; 
+        }
+
+        main {
+            padding: 30px 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--cor-secundaria);
+            margin: 30px 0 20px;
+            font-size: 2.4em;
+            font-weight: 700;
+        }
+        
+      
+        h2 {
+            color: var(--cor-primaria);
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto 25px;
+            padding: 0 10px;
+        }
+        
+    
+        p strong {
+            color: var(--cor-secundaria);
+            font-weight: 700;
+        }
+        
+        .linha {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px auto;
+            gap: 30px;
+            max-width: 1200px;
+            padding: 0 15px;
+        }
+
+        .coluna {
+            flex: 1 1 250px; 
+            max-width: 270px;
+            padding: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .coluna img {
+             border-radius: 10px;
+             transition: transform 0.5s ease;
+        }
+        
+        .coluna:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px var(--cor-sombra);
+        }
+        
+        .coluna:hover img {
+            transform: scale(1.05);
+            border-radius: 10px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: var(--cor-primaria);
+            color: #eaf5f8;
+            margin-top: 50px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+        @media (max-width: 900px) {
+            .coluna {
+                flex-basis: 45%;
+                max-width: 45%;
+            }
+            ul.menu {
+                flex-direction: column; 
+                align-items: stretch;
+            }
+            ul.menu li a {
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .coluna {
+                flex-basis: 90%;
+                max-width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="banners/banners/portugal_banner.jpg" alt="Banner ilustrativo de pratos e produtos portugueses">
+
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html"> Homepage </a></li>
+                    <li><a href="turismo.html"> Turismo </a></li>
+                    <li><a href="mosteiros.html"> Mosteiros </a></li>
+                    <li><a href="castelo.html"> Castelo </a></li>
+                    <li><a href="gastronomia.html" aria-current="page"> Gastronomia </a></li>
+                    <li><a href="contactos.html"> Contactos </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Gastronomia Portuguesa</h1>
+        
+        <section>
+            <h2>Peixe e Marisco: O Sabor do Atlântico</h2>
+            <p>Portugal é um país muito rico a nível de Gastronomia, sendo o mar a característica principal da culinária Portuguesa. Dispomos dos melhores peixes do mundo e sempre frescos, tal como o marisco que abunda ao longo do litoral Português.
+            Alguns pratos de Peixe que se destacam em Portugal são as **Cataplanas**, **Caldeiradas** e o nosso famoso **Bacalhau** preparado de mil e uma maneiras.</p>
+        </section>
+
+        <section>
+            <h2>Tradição de Carnes e Enchidos</h2>
+            <p>Portugal também é muito rico a nível de Carne, com excelentes carnes de Vitela, de Porco ou de Cabrito, de Norte a Sul do país. 
+            Alguns Pratos de Carne muito famosos em Portugal são o **Cozido à Portuguesa** com diversas carnes, legumes e enchidos, a **Feijoada à Portuguesa** e o **Arroz de Cabidela**.</p>
+        </section>
+
+        <section>
+            <h2>Produtos Internacionais de Destaque</h2>
+            <p>Os Produtos mais famosos em Portugal internacionalmente são o aclamado **Vinho do Porto**, que é o melhor acompanhamento que o nosso país oferece. Também se destacam os deliciosos **queijos** da Serra e Alentejo e o famoso **Pastel de Nata** de Belém, que fica sempre bem acompanhado por um café.</p>
+        </section>
+        
+        <section class="linha">
+            <figure class="coluna">
+                <img src="imagens/imagens/Gastronomia/5.jpg" alt="Prato de peixe e marisco, possivelmente uma Caldeirada ou Cataplana">
+            </figure>
+
+            <figure class="coluna">
+                <img src="imagens/imagens/Gastronomia/3.jpg" alt="Prato de carne tradicional portuguesa, como Cozido ou Feijoada">
+            </figure>
+
+            <figure class="coluna">
+                <img src="imagens/imagens/Gastronomia/13.jpg" alt="Vista de uma mesa com Vinho do Porto e Queijo">
+            </figure>  
+
+            <figure class="coluna">
+                <img src="imagens/imagens/Gastronomia/11.jpg" alt="Pastéis de Nata em uma travessa">
+            </figure>
+        </section>
+        
+        <hr>
+    </main>
+
+    <footer>
+        <div class="container">
+            © 2025 Turismo de Portugal | Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>

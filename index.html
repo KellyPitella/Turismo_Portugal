@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo de turismo em Portugal. Descubra monumentos históricos, bairros charmosos e os principais pontos turísticos do país.">
+    <title>Homepage - Portal Turismo Portugal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+    
+        :root {
+            --cor-primaria: hsl(199, 67%, 20%);
+            --cor-secundaria: #003b4f;
+            --cor-fundo: rgb(243, 243, 235);
+            --cor-menu-hover: hsl(199, 78%, 79%);
+            --cor-sombra: rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+            color: var(--cor-secundaria);
+            padding: 0 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+            margin-bottom: -4px;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-primaria);
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li a { 
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        
+        ul li a:hover,
+        ul li a:focus { 
+            color: var(--cor-menu-hover);
+            background-color: #15506a;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: var(--cor-secundaria);
+            margin: 30px 0 20px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+        
+        h2 { 
+            text-align: center;
+            color: var(--cor-primaria);
+            margin: 40px 0 20px;
+            font-size: 1.8em;
+            font-weight: 500;
+        }
+
+        p {
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            padding: 0 10px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+
+        .linha {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .coluna {
+            flex: 1 1 250px;
+            max-width: 270px; 
+            padding: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+
+            height: 200px; 
+        }
+        
+        .coluna img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 0;
+            transition: transform 0.4s ease;
+            
+            object-fit: cover; 
+        }
+
+        .coluna:hover {
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .coluna:hover img {
+            transform: scale(1.03); 
+        }
+
+        iframe {
+            display: block;
+            max-width: 100%;
+            width: 560px;
+            height: 315px;
+            margin: 40px auto;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: var(--cor-primaria);
+            color: #eaf5f8;
+            margin-top: 50px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .coluna {
+                flex-basis: 45%;
+                max-width: 45%;
+            }
+            ul {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            ul li a {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            iframe {
+                width: 90%;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .coluna {
+                flex-basis: 90%;
+                max-width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="banners/banners/portugal_banner.jpg" alt="Banner ilustrativo de paisagem portuguesa">
+
+        <nav class="container">
+            <ul>
+                 <li><a href="index.html" aria-current="page"> Homepage </a></li>
+                 <li><a href="turismo.html"> Turismo </a></li>
+                 <li><a href="mosteiros.html"> Mosteiros </a></li>
+                 <li><a href="castelo.html"> Castelo </a></li>
+                 <li><a href="gastronomia.html"> Gastronomia </a></li>
+                 <li><a href="contactos.html"> Contactos </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Turismo em Portugal</h1>
+
+        <h2>Bem Vindos ao nosso site de turismo de Portugal!</h2>
+
+        <p>Neste site, você encontrará um guia com alguns dos **principais pontos turísticos de Portugal**, desde monumentos históricos até bairros charmosos e cheios de vida. Seja para planejar sua viagem ou apenas conhecer mais sobre o País, aqui você descobrirá o que torna Portugal tão especial.</p>
+
+        <section class="linha">
+            <figure class="coluna">
+                <img src="imagens/imagens/torre_belem_lisboa.jpg" alt="Torre de Belém, Lisboa">
+            </figure>
+
+            <figure class="coluna">
+                <img src="imagens/imagens/lisboa1.jpg" alt="Vista da Alfama em Lisboa">
+            </figure>
+
+            <figure class="coluna">
+                <img src="imagens/imagens/batalha1.jpg" alt="Mosteiro da Batalha, exterior">
+            </figure>  
+
+            <figure class="coluna">
+                <img src="imagens/imagens/Braga.jpg" alt="Vista da cidade de Braga">
+            </figure>
+        </section>
+        
+        <hr>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O1dgtYkfQZU?si=xpRZeq1L2nwrnrUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+
+    <footer>
+        <div class="container">
+            Turismo de Portugal - todos os direitos reservados
+        </div>
+    </footer>
+</body>
+</html>

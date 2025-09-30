@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Turismo Portugal</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3eb;
+    line-height: 1.6;
+    color: #003b4f;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1c4e6d;
+}
+
+ul.menu li {
+    margin: 0;
+}
+
+ul.menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 25px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+ul.menu li a:hover {
+    color: #cce6f0;
+    background-color: #15506a;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #1c4e6d;
+    margin: 30px 0 20px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: justify;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.coluna {
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.coluna ul {
+    list-style: disc inside;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.coluna li {
+    margin-bottom: 8px;
+}
+
+.coluna img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.destinos .coluna {
+    background-color: #e6f0f2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c4e6d;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+    .linha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        max-width: 90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<img src="banners/banners/portugal_banner.jpg" alt="Banner de Portugal">
+
+<ul class="menu">
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="turismo.html">Turismo</a></li>
+    <li><a href="mosteiros.html">Mosteiros</a></li>
+    <li><a href="castelo.html">Castelo</a></li>
+    <li><a href="gastronomia.html">Gastronomia</a></li>
+    <li><a href="contactos.html">Contactos</a></li>
+</ul>
+
+<h1>Turismo em Portugal</h1>
+
+<p>Portugal é um dos destinos turísticos mais encantadores da Europa, conhecido por sua rica história, paisagens deslumbrantes e clima ameno. De norte a sul, o país oferece experiências únicas: cidades históricas como Lisboa e Porto, vilas pitorescas, praias paradisíacas no Algarve e vinhedos renomados no Douro.</p>
+
+<p>A gastronomia portuguesa, com pratos como o bacalhau, os pastéis de nata e os vinhos premiados, também conquista visitantes do mundo todo. Além disso, o povo acolhedor e a segurança tornam Portugal um lugar especial para quem busca cultura, descanso e aventura.</p>
+
+<div class="linha destinos">
+    <div class="coluna">
+        <h4>Lisboa</h4>
+        <ul>
+            <li>Torre de Belém e Mosteiro dos Jerónimos</li>
+            <li>Andar no tradicional Elétrico 28</li>
+            <li>Miradouros (como o da Senhora do Monte ou Santa Luzia)</li>
+            <li>Bairro Alto à noite e Alfama de dia</li>
+            <li>Pastéis de Belém na fábrica original</li>
+        </ul>
+    </div>
+
+    <div class="coluna">
+        <h4>Porto</h4>
+        <ul>
+            <li>Ponte Luís I e Ribeira do Douro</li>
+            <li>Caves de vinho do Porto em Vila Nova de Gaia</li>
+            <li>Livraria Lello e a Estação de São Bento</li>
+            <li>Cruzeiro pelo Rio Douro</li>
+        </ul>
+    </div>
+
+    <div class="coluna">
+        <h4>Algarve</h4>
+        <ul>
+            <li>Praias de Lagos, Benagil e Albufeira</li>
+            <li>Passeios de barco e observação de golfinhos</li>
+            <li>Pôr do sol no Cabo de São Vicente, em Sagres</li>
+        </ul>
+    </div>
+
+    <div class="coluna">
+        <h4>Centro e Interior</h4>
+        <ul>
+            <li>Mosteiro da Batalha e de Alcobaça</li>
+            <li>Santuário de Fátima</li>
+            <li>Aldeias históricas como Monsanto e Sortelha</li>
+            <li>Serra da Estrela, com neve no inverno e trilhas no verão</li>
+        </ul>
+    </div>
+
+    <div class="coluna">
+        <h4>Região do Douro</h4>
+        <ul>
+            <li>Rota do Vinho do Porto com visita a quintas</li>
+            <li>Passeios de barco pelo rio entre vinhedos</li>
+            <li>Miradouros incríveis como o de São Leonardo de Galafura</li>
+        </ul>
+    </div>
+</div>
+
+<div class="linha">
+    <div class="coluna">
+        <img src="imagens/imagens/torre_belem_lisboa.jpg" alt="Torre de Belém, Lisboa">
+    </div>
+
+    <div class="coluna">
+        <img src="imagens/imagens/lisboa1.jpg" alt="Lisboa">
+    </div>
+
+    <div class="coluna">
+        <img src="imagens/imagens/batalha1.jpg" alt="Mosteiro da Batalha">
+    </div>   
+
+    <div class="coluna">
+        <img src="imagens/imagens/Braga.jpg" alt="Braga">
+    </div>
+</div>
+
+<footer>
+    Turismo de Portugal -  Todos os direitos reservados
+</footer>
+
+</body>
+</html>
